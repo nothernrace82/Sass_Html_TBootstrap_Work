@@ -1,0 +1,197 @@
+$green: #74a889;
+$grey:  #f1f2f2;
+$dark-grey: #bcbec0;
+
+.center {
+  text-align: center !important;
+}
+
+.grey-colored {
+  color: $grey;
+}
+
+.dark-grey-colored {
+  color: $dark-grey;
+}
+
+.green-colored {
+  color: $green;
+}
+
+.inactive {
+  @extend .dark-grey-colored;
+}
+
+.display-table {
+  display: table;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.alert {
+  display: table;
+  width: 100%;
+  padding: 4px 15px;
+}
+
+.alert-success 
+{
+  background-color: $green !important;
+  output {
+    @extend .grey-colored;
+  }
+}
+
+.alert-info {
+  background-color: $grey !important;
+  border: none;
+}
+
+.active {
+  color: black;
+}
+
+@media(min-width:768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  header {
+    text-align: center;
+    .intro-text {
+      padding-top: 150px;
+      padding-bottom: 50px;
+      .intro-lead-in {
+        font-size: 42px;
+        line-height: 42px;
+        margin-bottom: 30px;
+      }
+      .intro-heading {
+        font-size: 20px;
+        line-height: 20px;
+        color: rgb(147, 149, 152);
+        margin: auto;
+        max-width: 560px;
+      }
+    }
+  }
+
+  #panels {
+    .panel {
+      background: transparent;
+      width: 675px;
+      margin: auto;
+      margin-bottom: 50px;
+      &.panel-default {
+        border: 1px solid $grey;
+        border-radius: 6px;
+      }
+      .tababble {
+        .nav-tabs {
+          padding: 0 20px;
+          border-bottom: none;
+          li {
+            border-radius: 3px 3px 0 0;
+            margin-bottom: -2px;
+            a {
+              margin-right: 4px;
+              background-color: $grey;
+              color: black;
+            }
+            &.active {
+              a,
+              a:focus,
+              a:hover {
+                background-color: $green;
+                color: $grey;
+              }
+            }
+            &.add-more {
+              a,
+              a:focus,
+              a:hover {
+                background-color: transparent;
+                color: $green;
+              }
+            }
+          }
+        }
+        .tab-content {
+          border: 2px solid $green;
+          border-radius: 6px;
+          padding: 10px 12px;
+          box-shadow: rgba(0, 0, 0, 0.372549) 0px 6px 12px 0px;
+          .tab-pane>div {
+            width: 100%;
+            border-radius: 6px;
+            padding: 4px 15px;
+            &.tab-heading {
+              .btn {
+                float: right;
+              }
+            }
+            &.tab-body {
+              margin-top: 10px;
+              background-color: $grey;
+              display: table;
+              .movable-pad-region {
+                margin: auto;
+                width: 80%;
+                .center {
+                  display: table;
+                  margin: auto;
+                  .pad {
+                    background: white;
+                    margin: 10px;
+                    float: left;
+                    padding: 8px 10px;
+                    border-radius: 3px;
+                    display: table-cell;
+                    &.active {
+                      border: 2px solid $green;
+                    }
+                    i.glyphicon {
+                      margin-right: 10px;
+                    }
+                  }
+                }                
+              }              
+            }
+          }
+          
+        }
+      }
+      .panel-heading {
+        display: table;
+        width: 100%;
+        padding: 10px 25px 7px 15px;
+        border-radius: 6px 6px 0 0;
+        .panel-title {
+          font-size: 18px;
+          padding: 0 20px;
+        }
+        a.pull-right {
+          height: 25px;
+          margin-left: 15px;
+        }
+      }
+      .panel-body {
+        .pull-right {
+          &.bonus {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

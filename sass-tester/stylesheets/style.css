@@ -1,5 +1,204 @@
-/* line 4, ../sass/style.sass */
+/* line 5, ../sass/style.scss */
+.center {
+  text-align: center !important;
+}
+
+/* line 9, ../sass/style.scss */
+.grey-colored, .alert-success output {
+  color: #f1f2f2;
+}
+
+/* line 13, ../sass/style.scss */
+.dark-grey-colored, .inactive {
+  color: #bcbec0;
+}
+
+/* line 17, ../sass/style.scss */
+.green-colored {
+  color: #74a889;
+}
+
+/* line 25, ../sass/style.scss */
+.display-table {
+  display: table;
+}
+
+/* line 29, ../sass/style.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 33, ../sass/style.scss */
+.alert {
+  display: table;
+  width: 100%;
+  padding: 4px 15px;
+}
+
+/* line 39, ../sass/style.scss */
+.alert-success {
+  background-color: #74a889 !important;
+}
+
+/* line 47, ../sass/style.scss */
+.alert-info {
+  background-color: #f1f2f2 !important;
+  border: none;
+}
+
+/* line 52, ../sass/style.scss */
+.active {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  /* line 57, ../sass/style.scss */
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+}
+/* line 67, ../sass/style.scss */
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 69, ../sass/style.scss */
+body header {
+  text-align: center;
+}
+/* line 71, ../sass/style.scss */
+body header .intro-text {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+/* line 74, ../sass/style.scss */
+body header .intro-text .intro-lead-in {
+  font-size: 42px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+/* line 79, ../sass/style.scss */
+body header .intro-text .intro-heading {
+  font-size: 20px;
+  line-height: 20px;
+  color: #939598;
+  margin: auto;
+  max-width: 560px;
+}
+/* line 90, ../sass/style.scss */
+body #panels .panel {
+  background: transparent;
+  width: 675px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+/* line 95, ../sass/style.scss */
+body #panels .panel.panel-default {
+  border: 1px solid #f1f2f2;
+  border-radius: 6px;
+}
+/* line 100, ../sass/style.scss */
+body #panels .panel .tababble .nav-tabs {
+  padding: 0 20px;
+  border-bottom: none;
+}
+/* line 103, ../sass/style.scss */
+body #panels .panel .tababble .nav-tabs li {
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -2px;
+}
+/* line 106, ../sass/style.scss */
+body #panels .panel .tababble .nav-tabs li a {
+  margin-right: 4px;
+  background-color: #f1f2f2;
+  color: black;
+}
+/* line 112, ../sass/style.scss */
+body #panels .panel .tababble .nav-tabs li.active a,
+body #panels .panel .tababble .nav-tabs li.active a:focus,
+body #panels .panel .tababble .nav-tabs li.active a:hover {
+  background-color: #74a889;
+  color: #f1f2f2;
+}
+/* line 120, ../sass/style.scss */
+body #panels .panel .tababble .nav-tabs li.add-more a,
+body #panels .panel .tababble .nav-tabs li.add-more a:focus,
+body #panels .panel .tababble .nav-tabs li.add-more a:hover {
+  background-color: transparent;
+  color: #74a889;
+}
+/* line 129, ../sass/style.scss */
+body #panels .panel .tababble .tab-content {
+  border: 2px solid #74a889;
+  border-radius: 6px;
+  padding: 10px 12px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
+}
+/* line 134, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div {
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 15px;
+}
+/* line 139, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-heading .btn {
+  float: right;
+}
+/* line 143, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body {
+  margin-top: 10px;
+  background-color: #f1f2f2;
+  display: table;
+}
+/* line 147, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body .movable-pad-region {
+  margin: auto;
+  width: 80%;
+}
+/* line 150, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body .movable-pad-region .center {
+  display: table;
+  margin: auto;
+}
+/* line 153, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body .movable-pad-region .center .pad {
+  background: white;
+  margin: 10px;
+  float: left;
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: table-cell;
+}
+/* line 160, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body .movable-pad-region .center .pad.active {
+  border: 2px solid #74a889;
+}
+/* line 163, ../sass/style.scss */
+body #panels .panel .tababble .tab-content .tab-pane > div.tab-body .movable-pad-region .center .pad i.glyphicon {
+  margin-right: 10px;
+}
+/* line 174, ../sass/style.scss */
+body #panels .panel .panel-heading {
+  display: table;
+  width: 100%;
+  padding: 10px 25px 7px 15px;
+  border-radius: 6px 6px 0 0;
+}
+/* line 179, ../sass/style.scss */
+body #panels .panel .panel-heading .panel-title {
+  font-size: 18px;
+  padding: 0 20px;
+}
+/* line 183, ../sass/style.scss */
+body #panels .panel .panel-heading a.pull-right {
+  height: 25px;
+  margin-left: 15px;
+}
+/* line 190, ../sass/style.scss */
+body #panels .panel .panel-body .pull-right.bonus {
+  margin-right: 20px;
 }
