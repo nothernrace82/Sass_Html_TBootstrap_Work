@@ -1,0 +1,8 @@
+/* line 10, ../sass/fire.scss */
+.tab-content {
+  border: 1px solid #74a889;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}

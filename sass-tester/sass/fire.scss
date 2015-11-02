@@ -1,0 +1,13 @@
+@import 'variable';
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.tab-content {
+	border: 1px solid $green;
+	@include border-radius(6px);
+}
