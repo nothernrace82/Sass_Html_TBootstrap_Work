@@ -1,0 +1,33 @@
+h2.thin {
+	font-size: 28px;
+	font-weight: 200;
+}
+
+.page-header {
+	
+}
+.page-body {
+	#one-two-section,
+	#favorite-section,
+	#day-section {
+		.form-group {
+			margin-bottom: 50px;
+		}
+	}
+	#day-section {
+		img {
+			height: 100px;
+		}
+	}
+	#commercial-section {
+		.submit {
+			@extend .alert-disable;
+			font-weight: 300;
+		}
+	}
+	#kids-section {
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}

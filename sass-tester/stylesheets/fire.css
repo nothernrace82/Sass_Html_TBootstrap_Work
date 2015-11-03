@@ -55,94 +55,134 @@ html, body {
   color: blue;
 }
 
-/* line 28, ../sass/fire.scss */
+/* line 1, ../sass/_disclaimer.scss */
+h2.thin {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+/* line 13, ../sass/_disclaimer.scss */
+.page-body #one-two-section .form-group,
+.page-body #favorite-section .form-group,
+.page-body #day-section .form-group {
+  margin-bottom: 50px;
+}
+/* line 18, ../sass/_disclaimer.scss */
+.page-body #day-section img {
+  height: 100px;
+}
+/* line 23, ../sass/_disclaimer.scss */
+.page-body #commercial-section .submit {
+  font-weight: 300;
+}
+/* line 29, ../sass/_disclaimer.scss */
+.page-body #kids-section p {
+  margin-bottom: 30px;
+}
+
+/* line 29, ../sass/fire.scss */
 .smart, .page-header, nav.navbar-default, .page-body form .nav-tabs li a {
   background: white;
   border: none;
   box-shadow: none;
 }
 
-/* line 34, ../sass/fire.scss */
+/* line 35, ../sass/fire.scss */
 .wrapper {
   overflow: hidden;
   display: table;
   width: 100%;
 }
 
-/* line 40, ../sass/fire.scss */
+/* line 41, ../sass/fire.scss */
 .page-header {
   padding-top: 100px;
   margin-top: 0;
 }
 
-/* line 47, ../sass/fire.scss */
+/* line 48, ../sass/fire.scss */
 .alert-success, nav.navbar-default .navbar-nav > li.active a.btn-success, .page-body form .nav-tabs li.active a, .page-body form .panel .panel-body .btn.btn-primary, .page-body form .panel-primary .panel-heading {
   background: #74a889;
   color: #f1f2f2;
   border: none;
 }
 
-/* line 53, ../sass/fire.scss */
+/* line 54, ../sass/fire.scss */
 .alert-info, .social-vote .btn.btn-default, .page-body form .nav-tabs li.inactive a, .page-body form .news-feed .panel .panel-body .btn.btn-info {
   background: #f1f2f2;
   color: black;
   border: none;
 }
 
-/* line 59, ../sass/fire.scss */
+/* line 60, ../sass/fire.scss */
 .alert-warning, .page-body form .tab-content .tab-pane .well .btn.btn-default {
   background: white;
   color: #bcbec0;
   border: none;
 }
 
-/* line 65, ../sass/fire.scss */
+/* line 66, ../sass/fire.scss */
 .alert-danger, .page-body form .tab-content .tab-pane .well .btn.btn-success {
   background: white;
   color: black;
   border: 1px solid #74a889;
 }
 
-/* line 71, ../sass/fire.scss */
+/* line 72, ../sass/fire.scss */
 .alert-default, .social-vote .btn.btn-primary, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
   background: white;
   color: #74a889;
   border: 1px solid #74a889;
 }
 
-/* line 77, ../sass/fire.scss */
+/* line 78, ../sass/fire.scss */
+.alert-disable, .page-body #commercial-section .submit {
+  background: #a7a9ac;
+  color: white;
+  border: none;
+}
+
+/* line 84, ../sass/fire.scss */
 .glyphicon {
   margin-right: 5px;
 }
 
-/* line 81, ../sass/fire.scss */
+/* line 88, ../sass/fire.scss */
 .padding-0 {
   padding: 0;
 }
 
-/* line 84, ../sass/fire.scss */
+/* line 92, ../sass/fire.scss */
 .margin-0 {
   margin: 0;
 }
 
-/* line 90, ../sass/fire.scss */
+/* line 97, ../sass/fire.scss */
+.submit button[type="submit"] {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+}
+
+/* line 104, ../sass/fire.scss */
 .input-group.input-danger input, .input-group.input-danger span {
   -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
 }
-/* line 93, ../sass/fire.scss */
+/* line 107, ../sass/fire.scss */
 .input-group.input-danger input[type="text"] {
   border: 1px solid #74a889;
 }
-/* line 96, ../sass/fire.scss */
+/* line 110, ../sass/fire.scss */
 .input-group.input-danger .btn-success {
   background: #74a889;
   color: #f1f2f2;
 }
 
-/* line 104, ../sass/fire.scss */
+/* line 118, ../sass/fire.scss */
 .social-vote .btn {
   margin-bottom: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
@@ -150,34 +190,34 @@ html, body {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
 }
-/* line 110, ../sass/fire.scss */
+/* line 124, ../sass/fire.scss */
 .social-vote .btn.btn-default span.glyphicon-heart {
   color: white;
 }
-/* line 117, ../sass/fire.scss */
+/* line 131, ../sass/fire.scss */
 .social-vote .btn span.glyphicon-heart {
   margin-top: 2px;
 }
 
-/* line 125, ../sass/fire.scss */
+/* line 139, ../sass/fire.scss */
 img.pull-left.glyphicon {
   margin-right: 20px;
 }
-/* line 128, ../sass/fire.scss */
+/* line 142, ../sass/fire.scss */
 img.pull-right.glyphicon {
   margin-left: 10px;
 }
 
-/* line 133, ../sass/fire.scss */
+/* line 147, ../sass/fire.scss */
 .close {
   opacity: .5;
 }
-/* line 136, ../sass/fire.scss */
+/* line 150, ../sass/fire.scss */
 .close:hover {
   opacity: 1;
 }
 
-/* line 146, ../sass/fire.scss */
+/* line 160, ../sass/fire.scss */
 nav.navbar-default .navbar-nav > li.active a {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -185,20 +225,24 @@ nav.navbar-default .navbar-nav > li.active a {
   margin-bottom: 10px;
 }
 
-/* line 162, ../sass/fire.scss */
+/* line 176, ../sass/fire.scss */
+.page-body .input-group-btn .btn {
+  margin-right: -3px;
+}
+/* line 181, ../sass/fire.scss */
 .page-body form .nav-tabs {
   padding: 0 27px;
   border: none;
 }
-/* line 166, ../sass/fire.scss */
+/* line 185, ../sass/fire.scss */
 .page-body form .nav-tabs li {
   padding: 0 2px;
 }
-/* line 168, ../sass/fire.scss */
+/* line 187, ../sass/fire.scss */
 .page-body form .nav-tabs li a {
   color: #74a889;
 }
-/* line 184, ../sass/fire.scss */
+/* line 203, ../sass/fire.scss */
 .page-body form .tab-content {
   padding: 15px 10px;
   border: 1px solid #74a889;
@@ -211,57 +255,57 @@ nav.navbar-default .navbar-nav > li.active a {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
 }
-/* line 191, ../sass/fire.scss */
+/* line 210, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane > div:last-child {
   margin-bottom: 0;
 }
-/* line 195, ../sass/fire.scss */
+/* line 214, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane .well h5 {
   padding-top: 0;
   padding-bottom: 20px;
 }
-/* line 199, ../sass/fire.scss */
+/* line 218, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane .well .btn {
   margin-bottom: 4px;
 }
-/* line 213, ../sass/fire.scss */
+/* line 232, ../sass/fire.scss */
 .page-body form .panel {
   border: 1px solid #bcbec0;
 }
-/* line 215, ../sass/fire.scss */
+/* line 234, ../sass/fire.scss */
 .page-body form .panel h5 {
   padding: 0 10px;
 }
-/* line 220, ../sass/fire.scss */
+/* line 239, ../sass/fire.scss */
 .page-body form .panel .panel-body .btn.btn-default {
   background: white;
   color: #bcbec0;
 }
-/* line 235, ../sass/fire.scss */
+/* line 254, ../sass/fire.scss */
 .page-body form .alert {
   padding: 5px 15px;
 }
-/* line 238, ../sass/fire.scss */
+/* line 257, ../sass/fire.scss */
 .page-body form .alert .close img {
   margin-top: -2px;
 }
-/* line 247, ../sass/fire.scss */
+/* line 266, ../sass/fire.scss */
 .page-body form .news-feed .panel .panel-body .btn.btn-info {
   color: white;
 }
-/* line 259, ../sass/fire.scss */
+/* line 278, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-success {
   color: #4fb3e0;
   background: white;
   border: 1px solid #4fb3e0;
 }
-/* line 264, ../sass/fire.scss */
+/* line 283, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-warning {
   color: #385988;
   background: white;
   border: 1px solid #385988;
 }
-/* line 269, ../sass/fire.scss */
+/* line 288, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-danger {
   color: white;
   background: #0278ba;
@@ -271,31 +315,24 @@ nav.navbar-default .navbar-nav > li.active a {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
 }
-/* line 278, ../sass/fire.scss */
+/* line 297, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .social-button .close img {
   margin-top: 6px;
 }
-/* line 288, ../sass/fire.scss */
-.page-body form .submit button[type="submit"] {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
-  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
-  box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
-}
-/* line 294, ../sass/fire.scss */
+/* line 308, ../sass/fire.scss */
 .page-body #missing-section > .row {
   margin-bottom: 50px;
 }
 
-/* line 300, ../sass/fire.scss */
+/* line 314, ../sass/fire.scss */
 .page-footer {
-  background: #bcbec0;
+  background: #e6e7e8;
 }
-/* line 303, ../sass/fire.scss */
+/* line 317, ../sass/fire.scss */
 .page-footer .social-buttons li {
   padding: 15px;
 }
-/* line 305, ../sass/fire.scss */
+/* line 319, ../sass/fire.scss */
 .page-footer .social-buttons li a {
   width: 40px;
   height: 40px;
@@ -303,30 +340,30 @@ nav.navbar-default .navbar-nav > li.active a {
   border-radius: 100%;
   display: table;
 }
-/* line 312, ../sass/fire.scss */
+/* line 326, ../sass/fire.scss */
 .page-footer .social-buttons li a.facebook {
   background: #0278ba;
 }
-/* line 315, ../sass/fire.scss */
+/* line 329, ../sass/fire.scss */
 .page-footer .social-buttons li a.twitter {
   background: #4fb3e0;
 }
-/* line 318, ../sass/fire.scss */
+/* line 332, ../sass/fire.scss */
 .page-footer .social-buttons li a.instagram {
   background: #385988;
 }
-/* line 322, ../sass/fire.scss */
+/* line 336, ../sass/fire.scss */
 .page-footer .social-buttons li a i.fa {
   color: white;
   font-size: 20px;
 }
-/* line 330, ../sass/fire.scss */
+/* line 344, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer {
   margin-bottom: 0;
   border-radius: initial;
 }
 @media (max-width: 767px) {
-  /* line 330, ../sass/fire.scss */
+  /* line 344, ../sass/fire.scss */
   .page-footer .navbar.navbar-footer {
     position: fixed;
     z-index: 1030;
@@ -335,25 +372,25 @@ nav.navbar-default .navbar-nav > li.active a {
     right: 0;
   }
 }
-/* line 338, ../sass/fire.scss */
+/* line 352, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse {
   background: #74a889;
   border: none;
 }
-/* line 343, ../sass/fire.scss */
+/* line 357, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a {
   color: #f1f2f2;
   line-height: 30px;
 }
-/* line 347, ../sass/fire.scss */
+/* line 361, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:hover, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:focus {
   color: red;
 }
-/* line 352, ../sass/fire.scss */
+/* line 366, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
   padding: 6px 20px;
 }
-/* line 360, ../sass/fire.scss */
+/* line 374, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer > .container {
   padding-left: 10px;
   padding-right: 10px;

@@ -2,6 +2,7 @@
 @import 'sticky-footer';
 @import 'login';
 @import 'suggestion';
+@import 'disclaimer';
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -74,6 +75,12 @@
 	border: 1px solid $green;
 }
 
+.alert-disable {
+	background: $dark-grey;
+	color: white;
+	border: none;
+}
+
 .glyphicon {
 	margin-right: 5px;
 }
@@ -81,8 +88,15 @@
 .padding-0 {
 	padding: 0;
 }
+
 .margin-0 {
 	margin : 0;
+}
+
+.submit {
+	button[type="submit"] {
+		@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 4px 6px 0px);
+	}
 }
 
 .input-group {
@@ -158,6 +172,11 @@ nav {
 }
 
 .page-body {
+	.input-group-btn {
+		.btn {
+			margin-right: -3px;
+		}
+	}
 	form {
 		.nav-tabs {
 			padding: 0 27px;
@@ -284,11 +303,6 @@ nav {
 			}
 			
 		}
-		.submit {
-			button[type="submit"] {
-				@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 4px 6px 0px);
-			}
-		}
 	}
 	#missing-section {
 		& > .row{
@@ -298,7 +312,7 @@ nav {
 }
 
 .page-footer {
-	background: $grey;
+	background: $light-grey;
 	.social-buttons {
 		li {
 			padding: 15px;
