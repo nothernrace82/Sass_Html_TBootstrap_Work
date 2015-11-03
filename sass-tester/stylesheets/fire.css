@@ -1,8 +1,299 @@
-/* line 10, ../sass/fire.scss */
-.tab-content {
+/* line 25, ../sass/fire.scss */
+.smart, .page-header, nav.navbar-default, .page-body form .nav-tabs li a {
+  background: white;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 31, ../sass/fire.scss */
+.wrapper {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+}
+
+/* line 42, ../sass/fire.scss */
+.alert-success, .page-body form .nav-tabs li.active a, .page-body form .panel .panel-body .btn.btn-primary, .page-body form .panel-primary .panel-heading {
+  background: #74a889;
+  color: #f1f2f2;
+  border: none;
+}
+
+/* line 48, ../sass/fire.scss */
+.alert-info, .social-vote .btn.btn-default, .page-body form .nav-tabs li.inactive a, .page-body form .news-feed .panel .panel-body .btn.btn-info {
+  background: #f1f2f2;
+  color: black;
+  border: none;
+}
+
+/* line 54, ../sass/fire.scss */
+.alert-warning, .page-body form .tab-content .tab-pane .well .btn.btn-default {
+  background: white;
+  color: #bcbec0;
+  border: none;
+}
+
+/* line 60, ../sass/fire.scss */
+.alert-danger, .page-body form .tab-content .tab-pane .well .btn.btn-success {
+  background: white;
+  color: black;
+  border: 1px solid #74a889;
+}
+
+/* line 66, ../sass/fire.scss */
+.alert-default, .social-vote .btn.btn-primary, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
+  background: white;
+  color: #74a889;
+  border: 1px solid #74a889;
+}
+
+/* line 72, ../sass/fire.scss */
+.glyphicon {
+  margin-right: 5px;
+}
+
+/* line 76, ../sass/fire.scss */
+.padding-0 {
+  padding: 0;
+}
+
+/* line 79, ../sass/fire.scss */
+.margin-0 {
+  margin: 0;
+}
+
+/* line 85, ../sass/fire.scss */
+.input-group.input-danger input, .input-group.input-danger span {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+}
+/* line 88, ../sass/fire.scss */
+.input-group.input-danger input[type="text"] {
+  border: 1px solid #74a889;
+}
+/* line 91, ../sass/fire.scss */
+.input-group.input-danger .btn-success {
+  background: #74a889;
+  color: #f1f2f2;
+}
+
+/* line 99, ../sass/fire.scss */
+.social-vote .btn {
+  margin-bottom: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
+}
+/* line 105, ../sass/fire.scss */
+.social-vote .btn.btn-default span.glyphicon-heart {
+  color: white;
+}
+/* line 112, ../sass/fire.scss */
+.social-vote .btn span.glyphicon-heart {
+  margin-top: 2px;
+}
+
+/* line 120, ../sass/fire.scss */
+img.pull-left.glyphicon {
+  margin-right: 20px;
+}
+/* line 123, ../sass/fire.scss */
+img.pull-right.glyphicon {
+  margin-left: 10px;
+}
+
+/* line 128, ../sass/fire.scss */
+.close {
+  opacity: .5;
+}
+/* line 131, ../sass/fire.scss */
+.close:hover {
+  opacity: 1;
+}
+
+/* line 144, ../sass/fire.scss */
+.page-body form .nav-tabs {
+  padding: 0 27px;
+  border: none;
+}
+/* line 148, ../sass/fire.scss */
+.page-body form .nav-tabs li {
+  padding: 0 2px;
+}
+/* line 150, ../sass/fire.scss */
+.page-body form .nav-tabs li a {
+  color: #74a889;
+}
+/* line 166, ../sass/fire.scss */
+.page-body form .tab-content {
+  padding: 15px 10px;
   border: 1px solid #74a889;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
+}
+/* line 173, ../sass/fire.scss */
+.page-body form .tab-content .tab-pane > div:last-child {
+  margin-bottom: 0;
+}
+/* line 177, ../sass/fire.scss */
+.page-body form .tab-content .tab-pane .well h5 {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+/* line 181, ../sass/fire.scss */
+.page-body form .tab-content .tab-pane .well .btn {
+  margin-bottom: 4px;
+}
+/* line 195, ../sass/fire.scss */
+.page-body form .panel {
+  border: 1px solid #bcbec0;
+}
+/* line 197, ../sass/fire.scss */
+.page-body form .panel h5 {
+  padding: 0 10px;
+}
+/* line 202, ../sass/fire.scss */
+.page-body form .panel .panel-body .btn.btn-default {
+  background: white;
+  color: #bcbec0;
+}
+/* line 217, ../sass/fire.scss */
+.page-body form .alert {
+  padding: 5px 15px;
+}
+/* line 220, ../sass/fire.scss */
+.page-body form .alert .close img {
+  margin-top: -2px;
+}
+/* line 229, ../sass/fire.scss */
+.page-body form .news-feed .panel .panel-body .btn.btn-info {
+  color: white;
+}
+/* line 241, ../sass/fire.scss */
+.page-body form .social-feed .panel .panel-body .btn.btn-success {
+  color: #4fb3e0;
+  background: white;
+  border: 1px solid #4fb3e0;
+}
+/* line 246, ../sass/fire.scss */
+.page-body form .social-feed .panel .panel-body .btn.btn-warning {
+  color: #385988;
+  background: white;
+  border: 1px solid #385988;
+}
+/* line 251, ../sass/fire.scss */
+.page-body form .social-feed .panel .panel-body .btn.btn-danger {
+  color: white;
+  background: #0278ba;
+  border: none;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
+}
+/* line 260, ../sass/fire.scss */
+.page-body form .social-feed .panel .panel-body .social-button .close img {
+  margin-top: 6px;
+}
+/* line 270, ../sass/fire.scss */
+.page-body form .submit button[type="submit"] {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+  box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
+}
+/* line 276, ../sass/fire.scss */
+.page-body #missing-section > .row {
+  margin-bottom: 50px;
+}
+
+/* line 282, ../sass/fire.scss */
+.page-footer {
+  background: #bcbec0;
+}
+/* line 285, ../sass/fire.scss */
+.page-footer .social-buttons li {
+  padding: 15px;
+}
+/* line 287, ../sass/fire.scss */
+.page-footer .social-buttons li a {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100%;
+  display: table;
+}
+/* line 294, ../sass/fire.scss */
+.page-footer .social-buttons li a.facebook {
+  background: #0278ba;
+}
+/* line 297, ../sass/fire.scss */
+.page-footer .social-buttons li a.twitter {
+  background: #4fb3e0;
+}
+/* line 300, ../sass/fire.scss */
+.page-footer .social-buttons li a.instagram {
+  background: #385988;
+}
+/* line 304, ../sass/fire.scss */
+.page-footer .social-buttons li a i.fa {
+  color: white;
+  font-size: 20px;
+}
+/* line 312, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer {
+  margin-bottom: 0;
+  border-radius: initial;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 312, ../sass/fire.scss */
+  .page-footer .navbar.navbar-footer {
+    position: fixed;
+    z-index: 1030;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 312, ../sass/fire.scss */
+  .page-footer .navbar.navbar-footer {
+    position: fixed;
+    z-index: 1030;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+/* line 323, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer.navbar-inverse {
+  background: #74a889;
+  border: none;
+}
+/* line 328, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a {
+  color: #f1f2f2;
+  line-height: 30px;
+}
+/* line 332, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:hover, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:focus {
+  color: red;
+}
+/* line 337, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
+  padding: 6px 20px;
+}
+/* line 345, ../sass/fire.scss */
+.page-footer .navbar.navbar-footer > .container {
+  padding-left: 10px;
+  padding-right: 10px;
 }

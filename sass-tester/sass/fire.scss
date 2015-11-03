@@ -7,7 +7,345 @@
           border-radius: $radius;
 }
 
-.tab-content {
+@mixin box-shadow($setting) {
+  -webkit-box-shadow: $setting;
+     -moz-box-shadow: $setting;
+      -ms-box-shadow: $setting;
+          box-shadow: $setting;
+}
+
+@mixin navbar-fixed-bottom() {
+	position: fixed;
+	z-index: 1030;
+	bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.smart {
+    background: white;
+    border: none;
+    box-shadow: none;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: table;
+    width: 100%;
+}
+
+.page-header {
+	@extend .smart;
+}
+
+
+.alert-success {
+	background: $green;
+	color: $white;
+	border: none;
+}
+
+.alert-info {
+	background: $white;
+	color: black;
+	border: none;
+}
+
+.alert-warning {
+	background: white;
+	color: $grey;
+	border: none;
+}
+
+.alert-danger {
+	background: white;
+	color: black;
 	border: 1px solid $green;
-	@include border-radius(6px);
+}
+
+.alert-default {
+	background: white;
+	color: $green;
+	border: 1px solid $green;
+}
+
+.glyphicon {
+	margin-right: 5px;
+}
+
+.padding-0 {
+	padding: 0;
+}
+.margin-0 {
+	margin : 0;
+}
+
+.input-group {
+	&.input-danger {
+		input, span {
+			@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 2px 4px 0px);
+		}
+		input[type="text"] {
+			border: 1px solid $green;			
+		}
+		.btn-success {
+			background: $green;
+			color: $white;
+		}
+	}
+}
+
+.social-vote {
+	.btn {
+		margin-bottom: 15px;
+		@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 2px 4px 0px);
+
+		&.btn-default {
+			@extend .alert-info;	
+			span.glyphicon-heart {
+				color: white;
+			}
+		}
+		&.btn-primary {
+			@extend .alert-default;
+		}
+		span.glyphicon-heart {
+			margin-top: 2px;
+		}
+	}
+}
+
+
+img {
+	&.pull-left.glyphicon {
+		margin-right: 20px;
+	}
+	&.pull-right.glyphicon {
+		margin-left: 10px;
+	}
+}
+
+.close {
+	opacity: .5;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+nav {
+	&.navbar-default {
+		@extend .smart;
+	}
+}
+
+.page-body {
+	form {
+		.nav-tabs {
+			padding: 0 27px;
+			border: none;
+
+			li {
+				padding: 0 2px;
+				a {
+					@extend .smart;
+					color: $green;
+				}
+				&.active {
+					a {
+						@extend .alert-success;
+					}
+				}
+				&.inactive {
+					a {
+						@extend .alert-info;
+					}
+				}
+			}
+		}
+		.tab-content {
+			padding: 15px 10px;
+			border: 1px solid $green;
+			@include border-radius(6px);
+			@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 6px 12px 0px);
+
+			.tab-pane {
+				& > div:last-child {
+					margin-bottom: 0;
+				}
+				.well {
+					h5 {
+						padding-top: 0;
+						padding-bottom: 20px;
+					}
+					.btn {
+						margin-bottom: 4px;
+
+						&.btn-default {
+							@extend .alert-warning;
+						}
+						&.btn-success {
+							@extend .alert-danger;
+						}
+					}
+					
+				}
+			}
+		}
+		.panel {
+			border: 1px solid $grey;
+			h5 {
+				padding: 0 10px;
+			}
+			.panel-body {
+				.btn {
+					&.btn-default {
+						background: white;
+						color: $grey;
+					}
+					&.btn-primary {
+						@extend .alert-success;
+					}
+				}
+			}
+		}
+		.panel-primary {
+			.panel-heading {
+				@extend .alert-success;
+			}
+		}
+		.alert {
+			padding: 5px 15px;
+			.close {
+				img {
+					margin-top: -2px;
+				}
+			}
+		}
+		.news-feed {
+			.panel {
+				.panel-body {
+					.btn {
+						&.btn-info {
+							@extend .alert-info;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.social-feed {
+			.panel {
+				.panel-body {
+					.btn {
+						&.btn-success {
+							color: $light-blue;
+							background: white;
+							border: 1px solid $light-blue;
+						}
+						&.btn-warning {
+							color: $dark-blue;
+							background: white;
+							border: 1px solid $dark-blue;
+						}
+						&.btn-danger {
+							color: white;
+							background: $blue;
+							border: none;
+							@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 2px 3px 0px);
+						}
+					}
+					.social-button {
+						.close {
+							img {
+								margin-top: 6px;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		.submit {
+			button[type="submit"] {
+				@include box-shadow(rgba(0, 0, 0, 0.372549) 0px 4px 6px 0px);
+			}
+		}
+	}
+	#missing-section {
+		& > .row{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.page-footer {
+	background: $grey;
+	.social-buttons {
+		li {
+			padding: 15px;
+			a {
+				width: 40px;
+				height: 40px;
+				padding: 10px;
+				border-radius: 100%;
+				display: table;
+
+				&.facebook {
+					background: $blue;
+				}
+				&.twitter {
+					background: $light-blue;
+				}
+				&.instagram {
+					background: $dark-blue;
+				}
+
+				i.fa {
+					color: white;
+					font-size: 20px;
+				}
+			}			
+		}
+	}
+	.navbar {
+		&.navbar-footer {
+			margin-bottom: 0;
+			border-radius: initial;
+
+			@media #{$tablet} {
+				@include navbar-fixed-bottom();
+			}
+			@media #{$phone} {
+				@include navbar-fixed-bottom();
+			}
+
+			&.navbar-inverse {
+				background: $green;
+				border: none;
+				.navbar-nav {
+					& > li {
+						& > a {
+							color: $white;
+							line-height: 30px;
+
+							&:hover,
+							&:focus {
+								color: red;
+							}
+
+							span.btn {
+								@extend .alert-default;
+								padding: 6px 20px;
+							}
+						}
+					}
+				}
+			}
+			& > .container {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}	
 }

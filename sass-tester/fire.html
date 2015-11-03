@@ -10,8 +10,8 @@
 	<title>Brieff | Homepage</title>
 	
 	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="stylesheets/fire.css" rel="stylesheet">
@@ -79,16 +79,19 @@
    			<form>
    				<div class="row form-group">
 	   				<div class="col-md-8 col-md-offset-2">
-	   					<ul class="nav nav-tabs">
-					        <li class="active"><a data-toggle="tab" href="#morning">Good Morning</a></li>
-					        <li><a data-toggle="tab" href="#afternoon">Afternoon</a></li>
-					        <li><a data-toggle="tab" href="#add-more">+ Add New Brieff</a></li>
-					    </ul>
-					    <div class="tab-content">
+	   					<div class="wrapper">
+	   						<ul class="nav nav-tabs row">
+						        <li class="active col-md-3 text-center"><a data-toggle="tab" href="#morning">Good Morning</a></li>
+						        <li class="inactive col-md-3 text-center"><a data-toggle="tab" href="#afternoon">Afternoon</a></li>
+						        <li class="col-md-3 text-center"><a data-toggle="tab" href="#add-more">+ Add New Brieff</a></li>
+						    </ul>
+	   					</div>
+	   					
+					    <div class="tab-content form-group">
 					        <div id="morning" class="tab-pane fade in active">
-					            <div class="alert alert-success">
-							        <a href="#" class="close btn btn-default" data-dismiss="alert">Edit</a>
-							        This Brieff edition will be delivered daily @ <em>5:00 AM</em>
+					            <div class="alert alert-success wrapper">
+							        <a href="#" class="btn btn-default btn-xs pull-right" data-dismiss="alert">Edit</a>
+							        This Brieff edition will be delivered daily &nbsp;&nbsp;@ &nbsp;&nbsp;&nbsp;&nbsp;5:00 AM
 							    </div>
 							    <div class="well">
 					                <h5 class="text-center">Select the content for your “Good Morning” Brieff</h5>
@@ -117,21 +120,21 @@
 	   					<div class="panel panel-primary">
 					        <div class="panel-heading">
 					            <div class="panel-title">
-					            	<a href="#" class="pull-right"><img src="images/close-icon.png" /></a>
-							        <a href="#" class="pull-right"><img src="images/down-arrow-in-circle.png" /></a>
-							        <img class="pull-left" src="images/cloud-icon.png" />Weather Locations
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/close-icon.png" /></a>
+							        <a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/down-arrow-in-circle.png" /></a>
+							        <img class="pull-left glyphicon" src="images/cloud-icon.png" style="margin-top: -3px;"/>Weather Locations
 							    </div>
 					        </div>
 					        <div class="panel-body">
 					        	<div class="alert alert-info">
-							        <a href="#" class="close" data-dismiss="alert">&times;</a>
+							        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 							        Sydney, Australia
 							    </div>
 							    <div class="alert alert-info">
-							        <a href="#" class="close" data-dismiss="alert">&times;</a>
+							        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 							        New York, USA
 							    </div>
-							    <a href="#" class="btn btn-link pull-right"><span class="text-success">+ New Lcation</span></a>
+							    <a href="#" class="btn btn-link pull-right"><span class="text-success">+ New Location</span></a>
 					        </div>
 					    </div>
 	   				</div>
@@ -142,19 +145,19 @@
 	   					<div class="panel panel-primary">
 					        <div class="panel-heading">
 					            <div class="panel-title">
-					            	<a href="#" class="pull-right"><img src="images/close-icon.png" /></a>
-					            	<a href="#" class="pull-right"><img src="images/up-arrow-in-circle.png" /></a>
-							        <a href="#" class="pull-right"><img src="images/down-arrow-in-circle.png" /></a>
-							        <img class="pull-left" src="images/calendar-icon.png" />Calendar
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/close-icon.png" /></a>
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/up-arrow-in-circle.png" /></a>
+							        <a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/down-arrow-in-circle.png" /></a>
+							        <img class="pull-left glyphicon" src="images/calendar-icon.png" style="margin-top: -7px;"/>Calendar
 							    </div>
 					        </div>
 					        <div class="panel-body">
 					        	<div class="alert alert-info">
-							        <a href="#" class="close" data-dismiss="alert">&times;</a>
+							        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 							        Google: marclipsitz@gmail.com
 							    </div>
 
-							    <div class="row">
+							    <div class="row margin-0">
 							    	<div class="col-md-6">
 							    		<div class="checkbox">
 								            <label><input type="checkbox"> marclipsitz@gmail.com </label>
@@ -167,7 +170,7 @@
 							    	</div>
 							    </div>
 
-							    <div class="row">
+							    <div class="row margin-0">
 							    	<div class="col-md-6">
 							    		<div class="checkbox">
 								            <label><input type="checkbox"> Birthday </label>
@@ -181,11 +184,11 @@
 							    </div>
 
 							    <div class="alert alert-info">
-							        <a href="#" class="close" data-dismiss="alert">&times;</a>
+							        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 							        Google: marc@whizz.com
 							    </div>
 
-							    <div class="row">
+							    <div class="row margin-0">
 							    	<div class="col-md-6">
 							    		<div class="checkbox">
 								            <label><input type="checkbox"> marc@whizz.com </label>
@@ -204,37 +207,37 @@
 	   				</div>
 	   			</div>
 
-	   			<div class="row form-group">
+	   			<div class="row form-group news-feed">
 	   				<div class="col-md-8 col-md-offset-2">
 	   					<div class="panel panel-primary">
 					        <div class="panel-heading">
 					            <div class="panel-title">
-					            	<a href="#" class="pull-right"><img src="images/close-icon.png" /></a>
-					            	<a href="#" class="pull-right"><img src="images/up-arrow-in-circle.png" /></a>
-							        <a href="#" class="pull-right"><img src="images/down-arrow-in-circle.png" /></a>
-							        <img class="pull-left" src="images/news-icon.png" />News Feed
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/close-icon.png" /></a>
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/up-arrow-in-circle.png" /></a>
+							        <a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/down-arrow-in-circle.png" /></a>
+							        <img class="pull-left glyphicon" src="images/news-icon.png" style="margin-top: -3px;"/>News Feed
 							    </div>
 					        </div>
 					        <div class="panel-body">
-					        	<form class="form-horizontal">
+					        	<div class="form-default">
 					        		<h5>
-							        	Select your feed size:
+							        	Select your feed size:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							        	<button type="button" class="btn btn-default">S</button>
 							        	<button type="button" class="btn btn-primary">M</button>
 							        	<button type="button" class="btn btn-default">L</button>
 							        	<button type="button" class="btn btn-default">XL</button>
 							        </h5>
 						        	<div class="alert alert-info">
-								        <a href="#" class="close" data-dismiss="alert">&times;</a>
+								        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 								        SMH (www.smh.com.au)
 								    </div>
 
 								    <div class="alert alert-info">
-								        <a href="#" class="close" data-dismiss="alert">&times;</a>
+								        <a href="#" class="close" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
 								        TechCrunch (www.techcrunch.com)
 								    </div>
 
-								    <div class="row">
+								    <div class="row form-group">
 						                <label for="selectFeed" class="control-label col-md-3">Suggested Feeds</label>
 						                <div class="col-md-9">
 						                    <select class="form-control" id="selectFeed">
@@ -246,91 +249,99 @@
 						                </div>
 						            </div>
 
-						            <div class="row">
+						            <div class="row form-group">
 						                <label for="selectFeed" class="control-label col-md-3">Add Your Own</label>
 						                <div class="col-md-9 form-inline">
-						                	<input type="text" class="form-control" id="inputName" placeholder="Name">
-						                	<input type="text" class="form-control" id="inputFeedUrl" placeholder="www.yourfeed.com">
-						                	<button type="submit" class="btn btn-info">Add</button>
+						                	<input type="text" class="form-control" id="inputName" placeholder="Name" style="width: 35%;">
+						                	<input type="text" class="form-control" id="inputFeedUrl" placeholder="www.yourfeed.com" style="width: 45%;">
+						                	<button type="submit" class="btn btn-info btn-block pull-right form-control" style="width: 18%;">Add</button>
 						                </div>
 						            </div>
 
 								    <a href="#" class="btn btn-link pull-right"><span class="text-success">- Hide</span></a>
-					        	</form>
+					        	</div>
 					        	
 					        </div>
 					    </div>
 	   				</div>
 	   			</div>
 
-	   			<div class="row form-group">
+	   			<div class="row form-group social-feed">
 	   				<div class="col-md-8 col-md-offset-2">
 	   					<div class="panel panel-primary">
 					        <div class="panel-heading">
 					            <div class="panel-title">
-					            	<a href="#" class="pull-right"><img src="images/close-icon.png" /></a>
-					            	<a href="#" class="pull-right"><img src="images/up-arrow-in-circle.png" /></a>
-							        <img class="pull-left" src="images/social-icon.png" />Social Media Feed
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/close-icon.png" /></a>
+					            	<a href="#" class="pull-right"><img class="pull-right glyphicon" src="images/up-arrow-in-circle.png" /></a>
+							        <img class="pull-left glyphicon" src="images/social-icon.png" />Social Media Feed
 							    </div>
 					        </div>
 					        <div class="panel-body">
-					        	<form class="form-horizontal">
+					        	<div class="form-horizontal">
 					        		<h5>
-							        	Select your feed size:
+							        	Select your feed size:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							        	<button type="button" class="btn btn-default">S</button>
 							        	<button type="button" class="btn btn-primary">M</button>
 							        	<button type="button" class="btn btn-default">L</button>
 							        	<button type="button" class="btn btn-default">XL</button>
 							        </h5>
 							        <div class="clearfix"></div>
-						        	<div class="row">
-						        		<div class="col-md-6 row">
-						        			<div class="col-md-10">
-						        				<button type="button" class="btn btn-success btn-block"><i class="fa fa-twitter"></i> Connected</button>
-						        			</div>
-						        			<div class="col-md-2">
-						        				<a href="#" class="close show" data-dismiss="alert">&times;</a>
-						        			</div>
+						        	<div class="row form-group">
+						        		<div class="col-md-6">
+						        			<div class="row social-button">
+						        				<div class="col-md-9">
+							        				<button type="button" class="btn btn-success btn-block"><i class="fa fa-twitter"></i> Connected</button>
+							        			</div>
+							        			<div class="col-md-2">
+							        				<a href="#" class="close show" data-dismiss="alert"><img src="images/red-close-in-dark-circle.png" /></a>
+							        			</div>
+						        			</div>						        			
 						        		</div>
-						        		<div class="col-md-6 row">
-						        			<div class="col-md-10">
-						        				<button type="button" class="btn btn-warning btn-block"><i class="fa fa-instagram"></i> Connected</button>
-						        			</div>
-						        			<div class="col-md-2">
-						        				<a href="#" class="close show" data-dismiss="alert">&times;</a>
-						        			</div>
+						        		<div class="col-md-6">
+						        			<div class="row social-button">
+						        				<div class="col-md-9 col-md-offset-1">
+							        				<button type="button" class="btn btn-warning btn-block"><i class="fa fa-instagram"></i> Connected</button>
+							        			</div>
+							        			<div class="col-md-2">
+							        				<a href="#" class="close show" data-dismiss="alert"><img src="images/red-close-in-dark-circle.png" /></a>
+							        			</div>
+						        			</div>						        			
 						        		</div>
 						        	</div>
 
 						        	<div class="row">
-						        		<div class="col-md-6 row">
-						        			<div class="col-md-10">
-						        				<button type="button" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Connect Facebook</button>
-						        			</div>
-						        			<div class="col-md-2">
-						        				<a href="#" class="close invisible" data-dismiss="alert">&times;</a>
-						        			</div>
+						        		<div class="col-md-6">
+						        			<div class="row social-button">
+						        				<div class="col-md-9">
+							        				<button type="button" class="btn btn-danger btn-block"><i class="fa fa-facebook"></i> Connect Facebook</button>
+							        			</div>
+							        			<div class="col-md-2">
+							        				<a href="#" class="close invisible" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
+							        			</div>
+						        			</div>						        			
 						        		</div>
-						        		<div class="col-md-6 row">
-						        			<div class="col-md-10">
-						        				<button type="button" class="btn btn-primary btn-block"><i class="fa fa-linkedin"></i> Connect LinkedIn</button>
-						        			</div>
-						        			<div class="col-md-2">
-						        				<a href="#" class="close invisible" data-dismiss="alert">&times;</a>
-						        			</div>
+						        		<div class="col-md-6">
+						        			<div class="row social-button">
+						        				<div class="col-md-9 col-md-offset-1">
+							        				<button type="button" class="btn btn-danger btn-block"><i class="fa fa-linkedin"></i> Connect LinkedIn</button>
+							        			</div>
+							        			<div class="col-md-2">
+							        				<a href="#" class="close invisible" data-dismiss="alert"><img src="images/red-close-in-circle.png" /></a>
+							        			</div>
+						        			</div>						        			
 						        		</div>
 						        	</div>
 
 								    <a href="#" class="btn btn-link pull-right"><span class="text-success">- Hide</span></a>
-					        	</form>
+					        	</div>
 					        	
 					        </div>
 					    </div>
 	   				</div>
 	   			</div>
 
-	   			<div class="form-group text-center">
-		            <button type="submit" class="btn btn-success">Send Brieff Now</button>
+	   			<div class="form-group text-center submit">
+		            <button type="submit" class="btn btn-success btn-lg alert-success">Send Brieff Now</button>
 		        </div>
    			</form>
    			<div id="missing-section">
@@ -353,7 +364,7 @@
 
 	    		<div class="row form-group">
 	    			<div class="col-md-6 col-md-offset-3">
-		                <div class="input-group">
+		                <div class="input-group input-danger">
 		                    <input type="text" class="form-control" placeholder="Tell us your suggestions&hellip;">
 		                    <span class="input-group-btn">
 		                        <button type="button" class="btn btn-success">Brieff This</button>
@@ -368,35 +379,39 @@
 	    			</div>	    			
 	    		</div>
 
-	    		<div class="row form-group">
-	    			<div class="col-md-10 col-md-offset-1 row">
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Facebook</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Traffic Conditions</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Ebay</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Star Signs</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Inspirational Quotes</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Daily Deals</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Local Events</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>TV Guides</button>
-	    				</div>
-	    				<div class="col-md-4 text-center">
-	    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Music Concerts</button>
-	    				</div>
+	    		<div class="row form-group social-vote">
+	    			<div class="col-md-10 col-md-offset-1">
+	    				<div class="row">
+	    					<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Facebook</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Traffic Conditions</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Ebay</button>
+		    				</div>
+		    				<div class="clearfix hidden-xs-block"></div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Star Signs</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Inspirational Quotes</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Daily Deals</button>
+		    				</div>
+		    				<div class="clearfix hidden-xs-block"></div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Local Events</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>TV Guides</button>
+		    				</div>
+		    				<div class="col-md-4 text-center">
+		    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Music Concerts</button>
+		    				</div>
+	    				</div>	    				
 	    			</div>
 	    		</div>
 
@@ -411,39 +426,39 @@
     		</div>
     		<div class="row">
     			<ul class="list-inline social-buttons">
-    				<li><a href="#"><i class="fa fa-facebook"></i></a>
+    				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
                     </li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
                     </li>                    
-                    <li><a href="#"><i class="fa fa-instagram"></i></a>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
                     </li>
                 </ul>
     		</div>
-    		<div class="row">
+    		<div class="row form-group">
     			<small>info@brieff.com</small>
     		</div>
 
     	</div>
 
     	<!-- Navigation -->
-		<nav class="navbar navbar-inverse">
+		<nav class="navbar navbar-inverse navbar-footer">
 	        <div class="container">
 	            <!-- Brand and toggle get grouped for better mobile display -->
 	            <div class="navbar-header page-scroll">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-menu">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottom-navbar-menu">
 	                    <span class="sr-only">Toggle navigation</span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-	                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/white-logo.png" /></a>
+	                <a class="navbar-brand page-scroll" href="#page-bottom"><img src="images/white-logo.png" /></a>
 	            </div>
 
 	            <!-- Collect the nav links, forms, and other content for toggling -->
-	            <div class="collapse navbar-collapse" id="top-navbar-menu">
+	            <div class="collapse navbar-collapse" id="bottom-navbar-menu">
 	                <ul class="nav navbar-nav navbar-right">
 	                    <li class="hidden active">
-	                        <a href="#page-top"></a>
+	                        <a href="#page-bottom"></a>
 	                    </li>
 	                    <li>
 	                        <a class="page-scroll" href="#disclaimer">Disclaimer</a>
@@ -458,7 +473,7 @@
 	                        <a class="page-scroll" href="#suggestions">Suggestions</a>
 	                    </li>
 	                    <li>
-	                    	<a class="btn btn-default" href="#login">Log in</a>
+	                    	<a href="#login"><span class="btn btn-default" >Log in</span></a>
 	                    </li>
 	                </ul>
 	            </div>
