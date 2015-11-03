@@ -36,94 +36,113 @@ html, body {
   opacity: 1;
 }
 
-/* line 27, ../sass/fire.scss */
+/* line 2, ../sass/_suggestion.scss */
+.social-support a {
+  text-decoration: none;
+}
+/* line 5, ../sass/_suggestion.scss */
+.social-support a img {
+  height: 35px;
+}
+/* line 8, ../sass/_suggestion.scss */
+.social-support a h6 {
+  color: black;
+  font-weight: 300;
+}
+/* line 15, ../sass/_suggestion.scss */
+.social-support a:hover h6, .social-support a.active h6 {
+  font-weight: 500;
+  color: blue;
+}
+
+/* line 28, ../sass/fire.scss */
 .smart, .page-header, nav.navbar-default, .page-body form .nav-tabs li a {
   background: white;
   border: none;
   box-shadow: none;
 }
 
-/* line 33, ../sass/fire.scss */
+/* line 34, ../sass/fire.scss */
 .wrapper {
   overflow: hidden;
   display: table;
   width: 100%;
 }
 
-/* line 39, ../sass/fire.scss */
+/* line 40, ../sass/fire.scss */
 .page-header {
   padding-top: 100px;
   margin-top: 0;
 }
 
-/* line 46, ../sass/fire.scss */
+/* line 47, ../sass/fire.scss */
 .alert-success, nav.navbar-default .navbar-nav > li.active a.btn-success, .page-body form .nav-tabs li.active a, .page-body form .panel .panel-body .btn.btn-primary, .page-body form .panel-primary .panel-heading {
   background: #74a889;
   color: #f1f2f2;
   border: none;
 }
 
-/* line 52, ../sass/fire.scss */
+/* line 53, ../sass/fire.scss */
 .alert-info, .social-vote .btn.btn-default, .page-body form .nav-tabs li.inactive a, .page-body form .news-feed .panel .panel-body .btn.btn-info {
   background: #f1f2f2;
   color: black;
   border: none;
 }
 
-/* line 58, ../sass/fire.scss */
+/* line 59, ../sass/fire.scss */
 .alert-warning, .page-body form .tab-content .tab-pane .well .btn.btn-default {
   background: white;
   color: #bcbec0;
   border: none;
 }
 
-/* line 64, ../sass/fire.scss */
+/* line 65, ../sass/fire.scss */
 .alert-danger, .page-body form .tab-content .tab-pane .well .btn.btn-success {
   background: white;
   color: black;
   border: 1px solid #74a889;
 }
 
-/* line 70, ../sass/fire.scss */
+/* line 71, ../sass/fire.scss */
 .alert-default, .social-vote .btn.btn-primary, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
   background: white;
   color: #74a889;
   border: 1px solid #74a889;
 }
 
-/* line 76, ../sass/fire.scss */
+/* line 77, ../sass/fire.scss */
 .glyphicon {
   margin-right: 5px;
 }
 
-/* line 80, ../sass/fire.scss */
+/* line 81, ../sass/fire.scss */
 .padding-0 {
   padding: 0;
 }
 
-/* line 83, ../sass/fire.scss */
+/* line 84, ../sass/fire.scss */
 .margin-0 {
   margin: 0;
 }
 
-/* line 89, ../sass/fire.scss */
+/* line 90, ../sass/fire.scss */
 .input-group.input-danger input, .input-group.input-danger span {
   -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
 }
-/* line 92, ../sass/fire.scss */
+/* line 93, ../sass/fire.scss */
 .input-group.input-danger input[type="text"] {
   border: 1px solid #74a889;
 }
-/* line 95, ../sass/fire.scss */
+/* line 96, ../sass/fire.scss */
 .input-group.input-danger .btn-success {
   background: #74a889;
   color: #f1f2f2;
 }
 
-/* line 103, ../sass/fire.scss */
+/* line 104, ../sass/fire.scss */
 .social-vote .btn {
   margin-bottom: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
@@ -131,34 +150,34 @@ html, body {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 4px 0px;
 }
-/* line 109, ../sass/fire.scss */
+/* line 110, ../sass/fire.scss */
 .social-vote .btn.btn-default span.glyphicon-heart {
   color: white;
 }
-/* line 116, ../sass/fire.scss */
+/* line 117, ../sass/fire.scss */
 .social-vote .btn span.glyphicon-heart {
   margin-top: 2px;
 }
 
-/* line 124, ../sass/fire.scss */
+/* line 125, ../sass/fire.scss */
 img.pull-left.glyphicon {
   margin-right: 20px;
 }
-/* line 127, ../sass/fire.scss */
+/* line 128, ../sass/fire.scss */
 img.pull-right.glyphicon {
   margin-left: 10px;
 }
 
-/* line 132, ../sass/fire.scss */
+/* line 133, ../sass/fire.scss */
 .close {
   opacity: .5;
 }
-/* line 135, ../sass/fire.scss */
+/* line 136, ../sass/fire.scss */
 .close:hover {
   opacity: 1;
 }
 
-/* line 145, ../sass/fire.scss */
+/* line 146, ../sass/fire.scss */
 nav.navbar-default .navbar-nav > li.active a {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -166,20 +185,20 @@ nav.navbar-default .navbar-nav > li.active a {
   margin-bottom: 10px;
 }
 
-/* line 161, ../sass/fire.scss */
+/* line 162, ../sass/fire.scss */
 .page-body form .nav-tabs {
   padding: 0 27px;
   border: none;
 }
-/* line 165, ../sass/fire.scss */
+/* line 166, ../sass/fire.scss */
 .page-body form .nav-tabs li {
   padding: 0 2px;
 }
-/* line 167, ../sass/fire.scss */
+/* line 168, ../sass/fire.scss */
 .page-body form .nav-tabs li a {
   color: #74a889;
 }
-/* line 183, ../sass/fire.scss */
+/* line 184, ../sass/fire.scss */
 .page-body form .tab-content {
   padding: 15px 10px;
   border: 1px solid #74a889;
@@ -192,57 +211,57 @@ nav.navbar-default .navbar-nav > li.active a {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 6px 12px 0px;
 }
-/* line 190, ../sass/fire.scss */
+/* line 191, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane > div:last-child {
   margin-bottom: 0;
 }
-/* line 194, ../sass/fire.scss */
+/* line 195, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane .well h5 {
   padding-top: 0;
   padding-bottom: 20px;
 }
-/* line 198, ../sass/fire.scss */
+/* line 199, ../sass/fire.scss */
 .page-body form .tab-content .tab-pane .well .btn {
   margin-bottom: 4px;
 }
-/* line 212, ../sass/fire.scss */
+/* line 213, ../sass/fire.scss */
 .page-body form .panel {
   border: 1px solid #bcbec0;
 }
-/* line 214, ../sass/fire.scss */
+/* line 215, ../sass/fire.scss */
 .page-body form .panel h5 {
   padding: 0 10px;
 }
-/* line 219, ../sass/fire.scss */
+/* line 220, ../sass/fire.scss */
 .page-body form .panel .panel-body .btn.btn-default {
   background: white;
   color: #bcbec0;
 }
-/* line 234, ../sass/fire.scss */
+/* line 235, ../sass/fire.scss */
 .page-body form .alert {
   padding: 5px 15px;
 }
-/* line 237, ../sass/fire.scss */
+/* line 238, ../sass/fire.scss */
 .page-body form .alert .close img {
   margin-top: -2px;
 }
-/* line 246, ../sass/fire.scss */
+/* line 247, ../sass/fire.scss */
 .page-body form .news-feed .panel .panel-body .btn.btn-info {
   color: white;
 }
-/* line 258, ../sass/fire.scss */
+/* line 259, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-success {
   color: #4fb3e0;
   background: white;
   border: 1px solid #4fb3e0;
 }
-/* line 263, ../sass/fire.scss */
+/* line 264, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-warning {
   color: #385988;
   background: white;
   border: 1px solid #385988;
 }
-/* line 268, ../sass/fire.scss */
+/* line 269, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .btn.btn-danger {
   color: white;
   background: #0278ba;
@@ -252,31 +271,31 @@ nav.navbar-default .navbar-nav > li.active a {
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 2px 3px 0px;
 }
-/* line 277, ../sass/fire.scss */
+/* line 278, ../sass/fire.scss */
 .page-body form .social-feed .panel .panel-body .social-button .close img {
   margin-top: 6px;
 }
-/* line 287, ../sass/fire.scss */
+/* line 288, ../sass/fire.scss */
 .page-body form .submit button[type="submit"] {
   -webkit-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
   -ms-box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
   box-shadow: rgba(0, 0, 0, 0.37255) 0px 4px 6px 0px;
 }
-/* line 293, ../sass/fire.scss */
+/* line 294, ../sass/fire.scss */
 .page-body #missing-section > .row {
   margin-bottom: 50px;
 }
 
-/* line 299, ../sass/fire.scss */
+/* line 300, ../sass/fire.scss */
 .page-footer {
   background: #bcbec0;
 }
-/* line 302, ../sass/fire.scss */
+/* line 303, ../sass/fire.scss */
 .page-footer .social-buttons li {
   padding: 15px;
 }
-/* line 304, ../sass/fire.scss */
+/* line 305, ../sass/fire.scss */
 .page-footer .social-buttons li a {
   width: 40px;
   height: 40px;
@@ -284,30 +303,30 @@ nav.navbar-default .navbar-nav > li.active a {
   border-radius: 100%;
   display: table;
 }
-/* line 311, ../sass/fire.scss */
+/* line 312, ../sass/fire.scss */
 .page-footer .social-buttons li a.facebook {
   background: #0278ba;
 }
-/* line 314, ../sass/fire.scss */
+/* line 315, ../sass/fire.scss */
 .page-footer .social-buttons li a.twitter {
   background: #4fb3e0;
 }
-/* line 317, ../sass/fire.scss */
+/* line 318, ../sass/fire.scss */
 .page-footer .social-buttons li a.instagram {
   background: #385988;
 }
-/* line 321, ../sass/fire.scss */
+/* line 322, ../sass/fire.scss */
 .page-footer .social-buttons li a i.fa {
   color: white;
   font-size: 20px;
 }
-/* line 329, ../sass/fire.scss */
+/* line 330, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer {
   margin-bottom: 0;
   border-radius: initial;
 }
 @media (max-width: 767px) {
-  /* line 329, ../sass/fire.scss */
+  /* line 330, ../sass/fire.scss */
   .page-footer .navbar.navbar-footer {
     position: fixed;
     z-index: 1030;
@@ -316,25 +335,25 @@ nav.navbar-default .navbar-nav > li.active a {
     right: 0;
   }
 }
-/* line 337, ../sass/fire.scss */
+/* line 338, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse {
   background: #74a889;
   border: none;
 }
-/* line 342, ../sass/fire.scss */
+/* line 343, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a {
   color: #f1f2f2;
   line-height: 30px;
 }
-/* line 346, ../sass/fire.scss */
+/* line 347, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:hover, .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a:focus {
   color: red;
 }
-/* line 351, ../sass/fire.scss */
+/* line 352, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer.navbar-inverse .navbar-nav > li > a span.btn {
   padding: 6px 20px;
 }
-/* line 359, ../sass/fire.scss */
+/* line 360, ../sass/fire.scss */
 .page-footer .navbar.navbar-footer > .container {
   padding-left: 10px;
   padding-right: 10px;

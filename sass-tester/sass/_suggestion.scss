@@ -1,0 +1,22 @@
+.social-support {
+	a {
+		text-decoration: none;
+
+		img {
+			height: 35px;
+		}
+		h6 {
+			color: black;
+			font-weight: 300;
+		}
+
+		&:hover,
+		&.active {
+			h6 {
+				font-weight: 500;
+				color: blue;
+			}			
+		}
+	}
+	
+}

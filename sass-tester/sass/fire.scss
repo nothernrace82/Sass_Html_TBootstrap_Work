@@ -1,6 +1,7 @@
 @import 'variable';
 @import 'sticky-footer';
 @import 'login';
+@import 'suggestion';
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
