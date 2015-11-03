@@ -1,0 +1,14 @@
+.login-form {
+	.form-control {
+		background: $white;
+		color: $grey;
+		border: none;
+		opacity: .5;
+
+		&:active,
+		&:focus {
+			opacity: 1;
+		}
+	}
+}
+	

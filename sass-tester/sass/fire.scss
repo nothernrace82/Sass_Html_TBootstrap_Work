@@ -1,4 +1,6 @@
 @import 'variable';
+@import 'sticky-footer';
+@import 'login';
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -36,6 +38,8 @@
 
 .page-header {
 	@extend .smart;
+	padding-top: $header-top;
+	margin-top: 0;
 }
 
 
@@ -136,6 +140,19 @@ img {
 nav {
 	&.navbar-default {
 		@extend .smart;
+		.navbar-nav {
+			& > li.active {
+				a {
+					padding-top: 5px;
+					padding-bottom: 5px;
+					margin-top: 10px;
+					margin-bottom: 10px;
+					&.btn-success {
+						@extend .alert-success;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -313,9 +330,6 @@ nav {
 			margin-bottom: 0;
 			border-radius: initial;
 
-			@media #{$tablet} {
-				@include navbar-fixed-bottom();
-			}
 			@media #{$phone} {
 				@include navbar-fixed-bottom();
 			}
