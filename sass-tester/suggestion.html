@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-	<title>Brieff | Login</title>
+	<title>Brieff | Homepage</title>
 	
 	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -40,14 +40,17 @@
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse" id="top-navbar-menu">
 	                <ul class="nav navbar-nav navbar-right">
-	                    <li class="nav-item">
+	                    <li class="hidden active">
+	                        <a href="#page-top"></a>
+	                    </li>
+	                    <li>
 	                        <a class="page-scroll" href="#">Home</a>
 	                    </li>
-	                    <li class="nav-item">
-	                        <a class="page-scroll" href="#signup">No account yet?</a>
+	                    <li>
+	                        <a class="page-scroll" href="#about">About</a>
 	                    </li>
-	                    <li class="nav-item active">
-	                        <a class="btn btn-success" href="#login">Get Started</a>
+	                    <li>
+	                        <a class="page-scroll" href="#suggestions">Suggestions</a>
 	                    </li>
 	                </ul>
 	            </div>
@@ -58,38 +61,99 @@
 
 	    <div class="page-header">
 	    	<div class="container">
-	    		<div class="row">
-	    			<div class="col-sm-4 col-sm-offset-4 text-center">    				
-	    				<h2>Log into your Brieff</h2>
+	    		<div class="row form-group">
+	    			<div class="col-sm-6 col-sm-offset-3 text-center">    				
+	    				<h2>What you really really want!</h2>
 	    			</div>
-	    		</div>    		
+	    		</div>
+
+	    		<div class="row form-group">
+	    			<div class="col-sm-6 col-sm-offset-3 text-center text-muted">    				
+	    				<small>We built Brieff for ourselves with the things we like to check and see before we can start our day. Everyone is different and everyone has different needs. </small>
+	    			</div>
+	    		</div>
 	    	</div>
 	    </div>
 
 	    <div class="page-body">
 	   		<div class="container">
-	   			<form class="form-horizontal">
-	   				<div class="row login-form">
-	   					<div class="col-sm-4 col-sm-offset-4">
-	   						<div class="form-group">
-	   							<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-	   						</div>
-	   						<div class="form-group">
-	   							<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-	   						</div>
-	   						<div class="form-group">
-	   							<a href="#password_recover" class="btn btn-link pull-right"><span class="text-warning">Forgot password?</span></a>
-	   						</div>
-	   						<div class="form-group">
-	   							<button type="submit" class="btn btn-primary alert-success pull-right">Login</button>
-	   						</div>
-	   					</div>
-	   				</div>
-			    </form>
+	   			<form>
+	   				<div id="missing-section">
+	   					<div class="row form-group">
+			    			<div class="col-sm-4 col-sm-offset-4 text-center">
+			    				<img src="images/peoples-emoji.png" class="img-responsive" />
+			    			</div>
+			    		</div>
+
+			    		<div class="row form-group">
+			    			<div class="col-sm-6 col-sm-offset-3">
+				                <div class="input-group input-danger">
+				                    <input type="text" class="form-control" placeholder="Tell us your suggestions&hellip;">
+				                    <span class="input-group-btn">
+				                        <button type="button" class="btn btn-success">Brieff This</button>
+				                    </span>
+				                </div>
+				            </div>
+			    		</div>
+
+			    		<div class="row form-group">
+			    			<div class="col-sm-8 col-sm-offset-2 text-center">    				
+			    				<big>Or click and vote for some of the trending suggestions below...</big>
+			    			</div>	    			
+			    		</div>
+
+			    		<div class="row form-group">
+			    			<div class="col-sm-8 col-sm-offset-2 text-center">    				
+			    				<h2>Select the features you want...</h2>
+			    			</div>
+			    		</div>
+
+			    		<div class="row form-group">
+			    			<div class="col-sm-6 col-sm-offset-3 text-center text-muted">    				
+			    				<small>We are constantly updating and adding new features. Place your vote below and the most popular items will get added next.</small>
+			    			</div>
+			    		</div>
+
+			    		<div class="row form-group social-vote">
+			    			<div class="col-sm-10 col-sm-offset-1">
+			    				<div class="row">
+			    					<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Facebook</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Traffic Conditions</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Ebay</button>
+				    				</div>
+				    				<div class="clearfix hidden-xs-block"></div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Star Signs</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Inspirational Quotes</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Daily Deals</button>
+				    				</div>
+				    				<div class="clearfix hidden-xs-block"></div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Local Events</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>TV Guides</button>
+				    				</div>
+				    				<div class="col-sm-4 text-center">
+				    					<button type="button" class="btn btn-default btn-block"><span class="glyphicon glyphicon-heart pull-right"></span>Music Concerts</button>
+				    				</div>
+			    				</div>	    				
+			    			</div>
+			    		</div>	   				
+		   			</div>
+	   			</form>		   			
 	   		</div>
 	    </div>
-	    <div class="push">
-	    </div>
+	    <div class="push"></div>
 	</div>
     <div class="page-footer">
     	<div class="container-fluid text-center">
@@ -145,7 +209,7 @@
 	                        <a class="page-scroll" href="#suggestions">Suggestions</a>
 	                    </li>
 	                    <li>
-	                    	<a href="#login"><span class="btn btn-default" >Get Started</span></a>
+	                    	<a href="#login"><span class="btn btn-default" >Log in</span></a>
 	                    </li>
 	                </ul>
 	            </div>
